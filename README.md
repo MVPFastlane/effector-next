@@ -60,9 +60,9 @@ yarn add effector-next
    <summary>next.config.js</summary>
 
    ```js
-   const { withEffectoReactAliases } = require("effector-next/tools");
+   const { withEffectorReactAliases } = require("effector-next/tools");
 
-   const enhance = withEffectoReactAliases();
+   const enhance = withEffectorReactAliases();
 
    module.exports = enhance({});
    ```

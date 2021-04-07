@@ -1,6 +1,6 @@
 const BuiltinModule = require("module");
 
-module.exports = function withEffectoReactAliases() {
+module.exports = function withEffectorReactAliases() {
   // Guard against poorly mocked module constructors
   const Module = module.constructor.length > 1 ? module.constructor : BuiltinModule;
 
