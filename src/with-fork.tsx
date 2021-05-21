@@ -22,17 +22,12 @@ interface CustomDocumentProps extends DocumentProps {
 
 export interface WithForkConfig {
   debug?: boolean;
-  serializeIgnore?: Array<Store<unknown>>;
+  serializeIgnore?: Array<Store<any>>;
 }
 
 export function withFork({ debug, serializeIgnore }: WithForkConfig = {}) {
   return (Document: typeof NextDocument) =>
-    class WithForkDocument extends React.Component<CustomDocumentProps> {
-      static renderDocument = Document.renderDocument;
-      static headTagsMiddleware = Document.headTagsMiddleware;
-      static bodyTagsMiddleware = Document.bodyTagsMiddleware;
-      static htmlPropsMiddleware = Document.htmlPropsMiddleware;
-
+    class WithForkDocument extends Document {
       static async getInitialProps(ctx: DocumentContext) {
         const originalRenderPage = ctx.renderPage;
         const startUnits = getStartUnits(originalRenderPage);

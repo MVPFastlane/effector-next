@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/weyheyhey/effector-next/compare/v1.3.0...v1.3.1) (2021-04-20)
+
+### Bug Fixes
+
+- **with-hydrate:** allow any type of origGetInitialProps to pass ([c1cb74d](https://github.com/weyheyhey/effector-next/commit/c1cb74dcb04911f4f61e7d1f1c1bc605eb345156))
+
+## [1.3.0](https://github.com/weyheyhey/effector-next/compare/v1.2.0...v1.3.0) (2021-04-20)
+
+### Features
+
+- add support for functional App ([8c2c985](https://github.com/weyheyhey/effector-next/commit/8c2c985c1e83a53861cc11eeadeb41ce755217fb))
+- **with-fork:** extends from passed Document ([7cac583](https://github.com/weyheyhey/effector-next/commit/7cac5835f6e6ab54a0574917a7c620bfe4959d0b))
+
+### Bug Fixes
+
+- remove peerDeps warnings ([8e15811](https://github.com/weyheyhey/effector-next/commit/8e158118f63e1689100477675a52442f8a3007c2))
+
 ## [1.2.0](https://github.com/weyheyhey/effector-next/compare/v1.1.0...v1.2.0) (2020-06-10)
 
 ### Features
